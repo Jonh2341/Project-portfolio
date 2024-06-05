@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script rel="stylesheet" src="lib/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <script src="core.js"></script>
+    <title>Adam-portfolio</title>
+</head>
+<body class="sizes">
+    <div class="container-for-all">
+                <!-- header "Home" -->
+                <header id="Home-id" class="header">
+                    <!-- top side of header  -->
+                    <div class="top-side-header-box">
+                        <div class="top-side-header">
+                            <img src="img/Designer.png" alt="Adam" width="50px" height="50px" class="icon-logo">
+                            <!-- navigation  -->
+                            <div class="burger-box">
+                                <input type="checkbox" name="" id="checkbox">
+                                <div class="hamburger-lines">
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                    <span class="line line3"></span>
+                                </div>  
+                            </div>
+                            <nav class="navigation">
+                                <ul class="list-box">
+                                    <li class="list"><a href="#Home-id" class="section-link">Home</a></li>
+                                    <li class="list"><a href="#about-id" class="section-link">About</a></li>
+                                    <li class="list"><a href="#slider-id" class="section-link">Project</a></li>
+                                    <li class="list"><a href="#skills-id" class="section-link">Skills</a></li>
+                                    <li class="list"><a href="#exp-id" class="section-link">Experience</a></li>
+                                    <li class="list"><a href="#form-id" class="section-link">Contact</a></li>  
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- bottom side of header -->
+                    <div class="bottom-side-header">
+                        <!-- "My name is" block -->
+                        <div class="card-box-header">
+                            <img src="img/Ellipse.png" alt="" class="absolute-one">
+                            <img src="img/Gradient.png" alt="" class="absolute-two">
+                            <img src="img/photografy-for-site.JPG" alt="my-icon" class="main-logo">
+                            <div class="right-side-of-box">
+                                <b class="language">HTML,CSS and <span class="little">little</span> JS</b>
+                                <h1 class="title">My name is <span class="purple">Adam</span>...</h1>
+                                <p class="who-im">Front-End developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- main -->
+                <main class="main">
+                    <!-- first section "About"-->
+                    <section id="about-id" class="section-one">
+                        <div class="container-about-sec-one">
+                            <span class="About-span">About me</span>
+                            <p class="about-title">I’m a <span class="purple">Front-End</span> developer.</p>
+                            <span class="subtitle-for-p">Currently, I'm not working now.</span>
+                            <p class="paraphraf-about">
+                                Hi! <span class="purple">My name is Adam! I’m 14</span> and <span class="purple">i can create web-sites</span> for you! Right now i live in <span class="purple">Ukraine</span> where i <span class="purple">study new in front-end.</span> I have a <span class="purple">hobby</span> - <span class="purple">thai boxing</span>, but I can also work on the site in my free time, make a 3D model in a program called “blender”, and I also like to communicate with my friends.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- second section "Project" with slider-->
+                    <section id="slider-id" class="section-two">
+                        <img src="img/Gradient.png" alt="" class="abs-sec-two">
+                        <p class="title-for-sec-two">My projects:</p>
+                        <div id="carouselExampleCaptions" class="carousel slide size-c">
+                            <div class="carousel-indicators back-g">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active butn-t" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="butn-t" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="butn-t" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="img/time.png" class="d-block w-100 cover-img" alt="time">
+                                <div class="carousel-caption  d-md-block col-or designer-block-slider">
+                                  <b class="boldy">Project time</b>
+                                  <p class="many-font">This project is about a store of watches and straps, there are 3 pages, the project is not adaptive and not team-based. That is, only I worked on the project.</p>
+                                  <a href="" class="link-to-projects">link here!</a>
+                                  <span class="little-tech">(technology: flex)</span>
+                                </div>
+                              </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item">
+                                <img src="img/web-study.png" class="d-block w-100 cover-img" alt="web-study">
+                                <div class="carousel-caption  d-md-block col-or designer-block-slider">
+                                  <b class="boldy">Project web-study</b>
+                                  <p class="many-font">This project is about a web studio that talks about roles in modern companies, as well as methodologies like Agile and Kanban.
+                                    The project was team-based and adaptive (4 pages), with an average of 3 people per 1 team. In this project, I was in the role of team-lead.</p>
+                                    <a href="" class="link-to-projects">link here!</a>
+                                    <span class="little-tech">(technology: flex & grid)</span>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/portfolio-img.png" class="d-block w-100 cover-img" alt="portfolio">
+                                <div class="carousel-caption  d-md-block col-or designer-block-slider">
+                                  <b class="boldy">Project portfolio</b>
+                                  <p class="many-font">This project was my portfolio for the time being until 2024, it is not adaptive and not team-based, it tells about me, the team, the school, order a site, etc.</p>
+                                  <a href="" class="link-to-projects">link here!</a>
+                                  <span class="little-tech">(technology: flex)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </section>
+                    <!-- section three "Skills"-->
+                    <section id="skills-id"  class="section-three">
+                        <!-- block "My skills" -->
+                        <div class="top-side-sec-three">
+                            <b class="title-of-sec-three-skills">My Skills:</b>
+                            <div class="box-top-side-sec-three">
+                                <div class="line-block">
+                                    <span class="font-for-sec-three">HTML</span>
+                                    <img src="img/full.png" alt="indicator" class="line-indicator">
+                                </div>
+                                <div class="line-block">
+                                    <span class="font-for-sec-three">JavaScript</span>
+                                    <img src="img/little.png" alt="indicator" class="line-indicator">
+                                </div>
+                                <div class="line-block">
+                                    <span class="font-for-sec-three">CSS</span>
+                                    <img src="img/full.png" alt="indicator" class="line-indicator">
+                                </div>
+                                <div class="line-block">
+                                    <span class="font-for-sec-three">Bootstrap</span>
+                                    <img src="img/good.png" alt="indicator" class="line-indicator">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- block "My Soft and Hard skills" -->
+                        <div class="bottom-side-sec-three">
+                            <b class="title-of-sec-three-skills">My <span class="greeny">Soft</span> and <span class="redy">Hard</span> skills:</b>
+                            <div class="bottom-side-box-for-list">
+                                <ul class="list-box-sec-three">
+                                    <li class="list-item-sec-three greeny">Team player</li>
+                                    <li class="list-item-sec-three greeny">Thinking outside the box</li>
+                                    <li class="list-item-sec-three greeny">Self discipline</li>
+                                    <li class="list-item-sec-three greeny">Responsibility</li>
+                                    <li class="list-item-sec-three greeny">Strategic planning</li>
+                                </ul>
+                                <ul class="list-box-sec-three">
+                                    <li class="list-item-sec-three redy">Make adaptive</li>
+                                    <li class="list-item-sec-three redy">Make responsible</li>
+                                    <li class="list-item-sec-three redy">fast printing</li>
+                                    <li class="list-item-sec-three redy">marking</li>
+                                    <li class="list-item-sec-three redy">comments </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- last section "Experience"-->
+                    <section id="exp-id" class="section-four">
+                        <h1 class="title-sec-four">What <span class="goldy">school experience</span> do I have?</h1>
+                        <div class="sec-four-block">
+                            <b class="bold purple font-for-three-block-in-four-section">3 YEARS OF EDUCATION</b>
+                            <p class="about-bold align-self-end font-for-paraphraf-big">full of practice</p>
+                        </div>
+                        <div class="sec-four-block">
+                            <b class="bold purple  font-for-three-block-in-four-section">30+ MICROPROJECTS</b>
+                            <p class="about-bold margin-specialy font-for-paraphraf-sec-four">on whose example I trained and mastered various layout technologies</p>
+                        </div>
+                        <div class="sec-four-block">
+                            <b class="bold purple font-for-three-block-in-four-section">5 BIG PROJECTS</b>
+                            <p class="about-bold align-self-end font-for-paraphraf-big">of different levels of complexity</p>
+                        </div>
+                        <div class="sec-four-block">
+                            <b class="bold purple  font-for-three-block-in-four-section">5 DIFFERENT LAYOUT TECHNOLOGIES</b>
+                            <ul class="flexy">
+                                <li class="about-bold list-flexy font-for-paraphraf-sec-four">block layout </li>
+                                <li class="about-bold list-flexy font-for-paraphraf-sec-four">direct flow</li>
+                                <li class="about-bold list-flexy font-for-paraphraf-sec-four">positioning</li>
+                                <li class="about-bold list-flexy font-for-paraphraf-sec-four">flexible layout</li>
+                                <li class="about-bold font-for-paraphraf-sec-four">grid layout</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- block "Contact" -->
+                    <section id="form-id" class="section-five">
+                        <h1 class="write-title">Write to me!</h1>
+                        <form class="form-contact form-radio" action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <div class="why-site">
+                                <b class="b-last">How do you like my site?</b>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      good
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      genius
+                                    </label>
+                                  </div>
+                              </div>
+                              <button type="button" class="btn gamma-color">Submit</button>
+                              <b>My Number: +380 (66) 199 97 23</b>
+                              <b>My Gmail: repaloadam@gmail.com</b>
+                              <a class="a-icons" href="https://github.com/Jonh2341"><img src="img/GitHub.svg" width="45px" height="45px" alt="telegram" class="icon-on-social">GitHub</a>
+                              <a class="a-icons" href="https://www.instagram.com/web.adam.web/"><img src="img/inst.svg" width="45px" height="45px" alt="instagram" class="icon-on-social">Instagram</a>
+                              <a class="a-icons" href="https://t.me/Adam_Repalo"><img src="img/tel.webp" width="45px" height="45px" alt="GitHub" class="icon-on-social">Telegram</a>
+                        </form>
+                    </section>
+                </main>
+                <!-- footer -->
+                <footer id="footer-id" class="footer"></footer>
+    </div>
+</body>
+</html>

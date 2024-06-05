@@ -1,0 +1,70 @@
+@media screen and (min-width: 320px) and (max-width: 744px) {
+    /* header start */
+
+    .header,.main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* header top side */
+
+    .top-side-header-box{
+        background-color: #1A0B2E;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-side-header{display: flex; align-items: center;}
+    .navigation{display: none;}
+    .main-logo{width: 70%;}
+    .top-side-header{width: 80%; display: flex; justify-content: space-between;}
+
+    .hamburger-lines{
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        height: 31px; 
+        width: 41px;
+    }
+
+    .line{
+        background-color: white; 
+        height: 5px; 
+        width: 41px; 
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .absolute-one{width: 60%;}
+
+    .absolute-two, .abs-sec-two{width: 80%;}
+    .line-indicator{width: 70%;}
+
+    #checkbox{ 
+        position: absolute; 
+        display: block; 
+        height: 31px; 
+        width: 41px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    #checkbox:checked ~ div.hamburger-lines > span.line3{
+        display: none;
+    }
+
+    #checkbox:checked ~ div.hamburger-lines > span.line1{
+        transform: rotate(45deg);
+        position: absolute;
+        top: 30px;
+    }
+
+    #checkbox:checked ~ div.hamburger-lines > span.line2{
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 30px;
+    }
+
+}

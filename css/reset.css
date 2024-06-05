@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none!important;
+    box-sizing: border-box;
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sizes {
+    background: #11071F;
+    color: white;
+}
