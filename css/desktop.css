@@ -7,6 +7,8 @@
         width: 100%;
     }
 
+    #checkbox, .hamburger-lines{display: none;}
+
     /* header top side */
     .burger-box{display: none;}
 
@@ -123,6 +125,7 @@
         margin-bottom: 94px; 
         display: flex; 
         flex-direction: column;
+        position: relative;
     }
     
     .title-for-sec-two{margin-bottom: 40px; font-size: 36px; align-self: center;} 
@@ -132,10 +135,12 @@
         background-repeat: no-repeat; 
         height: 608px; 
         opacity: 50%;
+        position: relative;
     }
 
     .col-or{color: #6D00FF!important;}
     .boldy{font-size: 20px;}
+    .index-b{height: 608px; align-self: end;}
 
     .size-c{
         background-color: black;

@@ -1,4 +1,4 @@
-@media screen and (min-width: 744px) and (max-width: 1279px) {
+@media screen and (min-width: 721px) and (max-width: 1279px) {
 
        /* header */
    
@@ -6,6 +6,8 @@
         display: flex;
         flex-direction: column;
     }
+
+    #checkbox, .hamburger-lines{display: none;}
 
     /* header top side */
     .burger-box{display: none;}
@@ -119,6 +121,7 @@
         }
     
         .section-two{
+            position: relative;
             margin-top: 60px; 
             margin-bottom: 94px; 
             display: flex; 
@@ -136,6 +139,7 @@
     
         .col-or{color: #6D00FF!important;}
         .boldy{font-size: 20px;}
+        .index-b{height: 608px; align-self: end;}
     
         .size-c{
             background-color: black;

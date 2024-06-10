@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/reset.css">
     <script rel="stylesheet" src="lib/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,22 +25,20 @@
                         <div class="top-side-header">
                             <img src="img/Designer.png" alt="Adam" width="50px" height="50px" class="icon-logo">
                             <!-- navigation  -->
-                            <div class="burger-box">
-                                <input type="checkbox" name="" id="checkbox">
-                                <div class="hamburger-lines">
-                                    <span class="line line1"></span>
-                                    <span class="line line2"></span>
-                                    <span class="line line3"></span>
-                                </div>  
-                            </div>
+                            <input type="checkbox" name="" id="checkbox">
+                            <label for="checkbox" class="hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                            </label> 
                             <nav class="navigation">
                                 <ul class="list-box">
-                                    <li class="list"><a href="#Home-id" class="section-link">Home</a></li>
-                                    <li class="list"><a href="#about-id" class="section-link">About</a></li>
-                                    <li class="list"><a href="#slider-id" class="section-link">Project</a></li>
-                                    <li class="list"><a href="#skills-id" class="section-link">Skills</a></li>
-                                    <li class="list"><a href="#exp-id" class="section-link">Experience</a></li>
-                                    <li class="list"><a href="#form-id" class="section-link">Contact</a></li>  
+                                    <li class="list list-first"><a href="#Home-id" class="section-link">Home</a></li>
+                                    <li class="list list-second"><a href="#about-id" class="section-link">About</a></li>
+                                    <li class="list list-three"><a href="#slider-id" class="section-link">Project</a></li>
+                                    <li class="list list-four"><a href="#skills-id" class="section-link">Skills</a></li>
+                                    <li class="list list-five"><a href="#exp-id" class="section-link">Experience</a></li>
+                                    <li class="list list-last"><a href="#form-id" class="section-link">Contact</a></li>  
                                 </ul>
                             </nav>
                         </div>
@@ -82,7 +81,7 @@
                               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="butn-t" aria-label="Slide 2"></button>
                               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="butn-t" aria-label="Slide 3"></button>
                             </div>
-                            <div class="carousel-item active">
+                            <div class="carousel-item index-movement active">
                                 <img src="img/time.png" class="d-block w-100 cover-img" alt="time">
                                 <div class="carousel-caption  d-md-block col-or designer-block-slider">
                                   <b class="boldy">Project time</b>
@@ -91,18 +90,17 @@
                                   <span class="little-tech">(technology: flex)</span>
                                 </div>
                               </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item">
+                              <div class="carousel-item index-movement">
                                 <img src="img/web-study.png" class="d-block w-100 cover-img" alt="web-study">
-                                <div class="carousel-caption  d-md-block col-or designer-block-slider">
+                                <div class="carousel-caption d-md-block col-or designer-block-slider">
                                   <b class="boldy">Project web-study</b>
-                                  <p class="many-font">This project is about a web studio that talks about roles in modern companies, as well as methodologies like Agile and Kanban.
-                                    The project was team-based and adaptive (4 pages), with an average of 3 people per 1 team. In this project, I was in the role of team-lead.</p>
-                                    <a href="" class="link-to-projects">link here!</a>
-                                    <span class="little-tech">(technology: flex & grid)</span>
+                                  <p class="many-font study-font">This project is about a web studio that talks about roles in modern companies, as well as methodologies like Agile and Kanban.
+                                   The project was team-based and adaptive (4 pages), with an average of 3 people per 1 team. In this project, I was in the role of team-lead.</p>
+                                  <a href="" class="link-to-projects">link here!</a>
+                                  <span class="little-tech">(technology: flex & grid)</span>
                                 </div>
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item index-movement">
                                 <img src="img/portfolio-img.png" class="d-block w-100 cover-img" alt="portfolio">
                                 <div class="carousel-caption  d-md-block col-or designer-block-slider">
                                   <b class="boldy">Project portfolio</b>
@@ -112,11 +110,11 @@
                                 </div>
                               </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <button class="carousel-control-prev index-b" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <button class="carousel-control-next index-b" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Next</span>
                             </button>
@@ -199,7 +197,7 @@
                         <form class="form-contact form-radio" action="">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" class="form-control font-regulator" id="exampleFormControlInput1" placeholder="name@example.com">
                               </div>
                               <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
