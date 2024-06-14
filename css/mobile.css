@@ -199,7 +199,7 @@
     }
 
     .title-for-sec-two{font-size: 36px;}
-    .cover-img{height: 207px; background-size: cover; opacity: 50%;}
+    .cover-img{height: 207px; background-size: cover; opacity: 50%; object-fit: cover;}
 
     /* section three "skills" */
 

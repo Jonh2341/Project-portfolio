@@ -133,6 +133,7 @@
         .cover-img{
             background-size: cover;
             background-repeat: no-repeat; 
+            object-fit: cover;
             height: 608px; 
             opacity: 50%;
         }
