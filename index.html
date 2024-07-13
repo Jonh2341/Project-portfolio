@@ -194,30 +194,31 @@
                     <!-- block "Contact" -->
                     <section id="form-id" class="section-five">
                         <h1 class="write-title">Write to me!</h1>
-                        <form class="form-contact form-radio">
+                        <form class="form-contact form-radio" method="post">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control font-regulator" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" class="form-control font-regulator" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
                               </div>
                               <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3"></textarea>
                               </div>
                               <div class="why-site">
                                 <b class="b-last">How do you like my site?</b>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" name="status" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                       good
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <input class="form-check-input" name="status" type="checkbox" value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
                                       genius
                                     </label>
                                   </div>
                               </div>
+                              <span id="error"></span>
                               <button type="button" class="btn gamma-color"><a class="button-send" href="mailto:repaloadam@gmail.com">Submit</a></button>
                               <b>My Number: +380 (66) 199 97 23</b>
                               <b>My Gmail: repaloadam@gmail.com</b>
